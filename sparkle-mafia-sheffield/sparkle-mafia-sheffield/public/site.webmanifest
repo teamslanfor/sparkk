@@ -1,0 +1,1 @@
+{ "name": "Sparkle Mafia Cleaning Services", "short_name": "Sparkle Mafia", "start_url": "/", "display": "standalone", "background_color": "#f8f5ef", "theme_color": "#0e0d12", "icons": [{ "src": "/assets/img/logo-mark.svg", "sizes": "any", "type": "image/svg+xml" }] }

@@ -1,0 +1,79 @@
+<!--meta
+{"key":"contact","dark":true,"path":"/contact/","title":"Contact & Free Quote | Sparkle Mafia Cleaning Services, Sheffield","description":"Get a free cleaning quote from Sparkle Mafia Cleaning Services. Call 07502 372439, email sparkleglitzmafia@gmail.com. 8 Kyle Crescent, Sheffield S5 8HQ. Open 24 hours."}
+-->
+<section class="page-hero" style="padding-bottom:clamp(60px,8vw,110px)">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span aria-current="page">Contact</span></nav>
+    <h1>Let’s talk <span class="pink">clean.</span></h1>
+    <p class="lead">Send us a few details for a free, no-obligation quote, or just call. We’re open 24 hours.</p>
+  </div>
+</section>
+
+<section class="section" id="quote" style="padding-top:0;margin-top:-50px">
+  <div class="container">
+    <div class="contact-wrap reveal zoom">
+      <aside class="contact-info">
+        <h2>Talk to us directly</h2>
+        <ul class="c-list">
+          <li><a href="{{site.phoneHref}}"><span class="ic">{{icon:phone}}</span><span><small>Call</small><strong>{{site.phone}}</strong></span></a></li>
+          <li><a href="mailto:{{site.email}}?subject=Cleaning%20quote%20request"><span class="ic">{{icon:mail}}</span><span><small>Email</small><strong>{{site.email}}</strong></span></a></li>
+          <li><a href="{{site.whatsapp}}" target="_blank" rel="noopener"><span class="ic">{{icon:whatsapp}}</span><span><small>WhatsApp</small><strong>Message us now</strong></span></a></li>
+          <li><a href="{{mapsLink}}" target="_blank" rel="noopener"><span class="ic">{{icon:pin}}</span><span><small>Address</small><strong>8 Kyle Crescent, Sheffield S5 8HQ</strong></span></a></li>
+        </ul>
+        <div class="hours-box">
+          <span class="open-now" data-open-now>Checking hours…</span>
+          <h3>Opening hours</h3>
+          <ul class="hours-list">
+            <li><span>Monday – Friday</span><strong>Open 24 hours</strong></li>
+            <li><span>Saturday</span><strong>Open 24 hours</strong></li>
+            <li><span>Sunday</span><strong>Open 24 hours</strong></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-pink" data-open-chat>{{icon:chat}}<span>Ask our assistant</span></button>
+      </aside>
+      <div class="contact-form">
+        <h2>Request a free quote</h2>
+        <p style="color:var(--muted)">Fields marked <span style="color:var(--pink-deep)">*</span> are required.</p>
+        <form id="quote-form" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="name">Full name <span class="req">*</span></label><input id="name" name="name" type="text" autocomplete="name" required maxlength="80"><span class="err" role="alert"></span></div>
+            <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120"><span class="err" role="alert"></span></div>
+            <div class="field"><label for="phone">Phone number <span class="req">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" placeholder="07…"><span class="err" role="alert"></span></div>
+            <div class="field"><label for="service">Service</label>
+              <select id="service" name="service"><option value="">Not sure yet</option>{{serviceOptions}}</select>
+            </div>
+            <div class="field full"><label for="message">Tell us what you need <span class="req">*</span></label><textarea id="message" name="message" required maxlength="2000" placeholder="E.g. Office in Sheffield city centre, about 250 m², cleaning 3 evenings a week…"></textarea><span class="err" role="alert"></span></div>
+            <div class="hp" aria-hidden="true"><label for="_honey">Leave this empty</label><input id="_honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+          </div>
+          <div class="form-foot">
+            <small data-form-note>We only use your details to reply to your enquiry. We never share them.</small>
+            <button type="submit" class="btn btn-pink"><span class="spinner" aria-hidden="true"></span><span>Send my request</span><span class="btn-label-icon">{{icon:send}}</span></button>
+          </div>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="head-row reveal"><div><p class="kicker">{{icon:pin}} Find us</p><h2>Based in Sheffield S5.</h2></div><p class="lead">8 Kyle Crescent, Sheffield S5 8HQ, serving Sheffield and South Yorkshire.</p></div>
+    <div class="map-frame reveal zoom">
+      <iframe title="Map showing Sparkle Mafia Cleaning Services at 8 Kyle Crescent, Sheffield S5 8HQ" src="https://maps.google.com/maps?q=8%20Kyle%20Crescent%2C%20Sheffield%20S5%208HQ&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section paper">
+  <div class="container">
+    <div class="head-row reveal"><div><p class="kicker">{{icon:sparkle}} FAQs</p><h2>Quick answers.</h2></div></div>
+    <div class="faq reveal">
+      <details><summary>When can you clean?<span class="pm">{{icon:plus}}</span></summary><p>We’re open 24 hours, 7 days a week: early mornings, evenings, overnight or weekends, whatever suits you.</p></details>
+      <details><summary>How do I get a price?<span class="pm">{{icon:plus}}</span></summary><p>Call {{site.phone}}, email, WhatsApp or use the form. Tell us the type of space, its approximate size and how often you need cleaning.</p></details>
+      <details><summary>Do you clean factories and warehouses?<span class="pm">{{icon:plus}}</span></summary><p>Yes. We clean industrial floors, aisles, welfare facilities and on-site offices, working around your shifts.</p></details>
+      <details><summary>Do you do one-off cleans?<span class="pm">{{icon:plus}}</span></summary><p>Yes, we do one-off deep cleans and end of tenancy cleans, as well as regular scheduled cleaning.</p></details>
+      <details><summary>Which areas do you cover?<span class="pm">{{icon:plus}}</span></summary><p>We’re based in Sheffield S5 and cover Sheffield and the surrounding South Yorkshire area.</p></details>
+    </div>
+  </div>
+</section>
